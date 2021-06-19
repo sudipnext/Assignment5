@@ -1,20 +1,19 @@
 //wap to read a +ve integer and find the sum of digits using function.
 #include <stdio.h>
-
 int positive_sum_finder(int num){
-    int first,second, sum;
-    if (num >=0){
-        first = num /10;
-        second = num % 10;
-        sum = first + second;
-        return sum;
+    int reminder, sum=0;
+    while (num !=0){
+        reminder = num % 10;
+        sum = sum + reminder;
+        num /=10;
     }
+    printf("The sum of digits is:- %d\n\n", sum);
 
 }
-//INCOMPLETE
+
 int main(){
     int a;
-    printf("Enter a +ve digit");
+    printf("Enter a +ve digit:-- ");
     scanf("%d", &a);
     positive_sum_finder(a);
     return 0;
