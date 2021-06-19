@@ -1,3 +1,4 @@
+//Wap to find the square of any number using the function
 #include <stdio.h>
 
 int square_number(int num){
