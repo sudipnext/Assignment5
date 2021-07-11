@@ -6,7 +6,7 @@
 // Define a structure named Person, Employee, Item, Account, Author, Book, Point, Customer with its members:
 // a)Person(name, age, address, contact)
 // #include <stdio.h>
-// #include <stdlib.h>
+//   
 
 // struct person
 // {
@@ -53,7 +53,7 @@
 
 // b)Employee(id, name, address, contact, doj, designation, salary)
 // #include <stdio.h>
-// #include <stdlib.h>
+//   
 
 // struct employee
 // {
@@ -156,7 +156,7 @@
 // }
 // d)Item(code, name, price)
 // #include <stdio.h>
-// #include <stdlib.h>
+//   
 
 // struct item
 // {
@@ -199,7 +199,7 @@
 
 // e)Author(id, name, contact. Email, gender)
 // #include <stdio.h>
-// #include <stdlib.h>
+//   
 
 // struct author{
 //     char id[10];
@@ -247,7 +247,7 @@
 
 // f)Book(ISBN, title, author, category, pages)
 // #include <stdio.h>
-// #include <stdlib.h>
+//   
 
 // struct author{
 //     char isbn[10];
@@ -296,7 +296,7 @@
 
 // g)Account(id, name, acno, actype, balance)
 // #include <stdio.h>
-// #include <stdlib.h>
+//   
 
 // struct account{
 //     char id[10];
@@ -344,7 +344,7 @@
 
 // h)      Point(x, y)
 // #include <stdio.h>
-// #include <stdlib.h>
+//   
 
 // struct account{
 //     int y1;
@@ -398,44 +398,88 @@
 
 // 3.Define a structure name Date having data members day, month & year. 
 //    Write a main program toadd two given Date.
-#include<stdio.h>
-struct name_date
-{
-    int day, month, year;
-};
-int main(){
-    struct name_date first, second, sum;
-    printf("Enter 1st date in the format day-month-year\n");
-    scanf("%d %d %d", &first.day, &first.month, &first.year);
-    printf("Enter 2nd date in the format day-month-year\n");
-    scanf("%d %d %d ", &second.day, &second.month, &second.year);
+// #include<stdio.h>
+// struct name_date
+// {
+//     int day, month, year;
+// };
+// int main(){
+//     struct name_date first, second, sum;
+//     printf("Enter 1st date in the format day-month-year\n");
+//     scanf("%d %d %d", &first.day, &first.month, &first.year);
+//     printf("Enter 2nd date in the format day-month-year\n");
+//     scanf("%d %d %d", &second.day, &second.month, &second.year);
 
-    sum.day = first.day + second.day;
-    sum.month= first.month+second.month;
-    sum.year= first.year+second.year;
-    while(sum.day >= 31){
-        sum.day-=31;
-        sum.month++;
-    }
-    while(sum.month >=12)
-    {
-        sum.month-=12;
-        sum.year++;
-    }
-    printf("The final year is (%d)/(%d)/(%d)", sum.day, sum.month, sum.year);
-    return 0;
+//     sum.day = first.day + second.day;
+//     sum.month= first.month+second.month;
+//     sum.year= first.year+second.year;
+//     while(sum.day > 31){
+//         sum.day-=31;
+//         sum.month++;
+//     }
+//     while(sum.month >12)
+//     {
+//         sum.month-=12;
+//         sum.year++;
+//     }
+//     printf("The final year is (%d)/(%d)/(%d)", sum.day, sum.month, sum.year);
+//     return 0;
     
-}
+// }
 
 //    4.Define a structure name Time having data members hour, minute & second. 
 //    Write a main program to add two given Time.
+// #include<stdio.h>
+// struct time
+// {
+//     int hour, minutes, seconds;
+// };
+// int main(){
+//     struct time first, second, sum;
+//     printf("Enter 1st date in the format hour-minutes-seconds\n");
+//     scanf("%d %d %d", &first.hour, &first.minutes, &first.seconds);
+//     printf("Enter 2nd date in the format hour-minutes-seconds\n");
+//     scanf("%d %d %d", &second.hour, &second.minutes, &second.seconds);
 
-
-
-
-
-
-
+//     sum.hour = first.hour + second.hour;
+//     sum.minutes= first.minutes+second.minutes;
+//     sum.seconds= first.seconds+second.seconds;
+//     while(sum.seconds > 60){
+//         sum.seconds-=60;
+//         sum.minutes++;
+//     }
+//     while(sum.minutes >60)
+//     {
+//         sum.minutes-=12;
+//         sum.hour++;
+//     }
+//     printf("The final time is (%d)/(%d)/(%d)", sum.hour, sum.minutes, sum.seconds);
+//     return 0;
+    
+// }
 
 // 5.Define a structure name Distance having data members feet & inch. 
 //    Write a main program to add two given Distances .
+// #include<stdio.h>
+// struct distance
+// {
+//     int   feet, inch;
+// };
+// int main(){
+//     struct distance first, second, sum;
+//     printf("Enter 1st distance in the format   feet-inch\n");
+//     scanf("%d %d", &first.feet, &first.inch);
+//     printf("Enter 2nd distance in the format feet-inch\n");
+//     scanf("%d %d", &second.feet, &second.inch);
+
+//     sum.feet = first.feet + second.feet;
+//     sum.inch= first.inch+second.inch;
+//     while(sum.inch >12)
+//     {
+//         sum.inch-=12;
+//         sum.feet++;
+//     }
+//     printf("The final time is (%d)-(%d)", sum.feet, sum.inch);
+//     return 0;
+    
+// }
